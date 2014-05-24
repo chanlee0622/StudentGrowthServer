@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>studentgrowth</artifactId>
+        <groupId>cn.edu.fjnu.cse</groupId>
+        <version>1.0-FjnuCse</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>studentgrowth-webapp</artifactId>
+    <packaging>war</packaging>
+    <name>福建示师范大学软件学院学生成长管理系统Web端</name>
+    <url>http://maven.apache.org</url>
+    <dependencies>
+        <dependency>
+            <groupId>cn.edu.fjnu.cse</groupId>
+            <artifactId>studentgrowth-common</artifactId>
+            <version>1.0-FjnuCse</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.edu.fjnu.cse</groupId>
+            <artifactId>studentgrowth-service</artifactId>
+            <version>1.0-FjnuCse</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.edu.fjnu.cse</groupId>
+            <artifactId>studentgrowth-dao</artifactId>
+            <version>1.0-FjnuCse</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.edu.fjnu.cse</groupId>
+            <artifactId>studentgrowth-model</artifactId>
+            <version>1.0-FjnuCse</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>studentgrowth-webapp</finalName>
+    </build>
+</project>

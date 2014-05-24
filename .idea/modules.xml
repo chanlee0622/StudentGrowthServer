@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/StudentGrowthServer.iml" filepath="$PROJECT_DIR$/StudentGrowthServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studentgrowth-common/studentgrowth-common.iml" filepath="$PROJECT_DIR$/studentgrowth-common/studentgrowth-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studentgrowth-dao/studentgrowth-dao.iml" filepath="$PROJECT_DIR$/studentgrowth-dao/studentgrowth-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studentgrowth-model/studentgrowth-model.iml" filepath="$PROJECT_DIR$/studentgrowth-model/studentgrowth-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studentgrowth-service/studentgrowth-service.iml" filepath="$PROJECT_DIR$/studentgrowth-service/studentgrowth-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studentgrowth-webapp/studentgrowth-webapp.iml" filepath="$PROJECT_DIR$/studentgrowth-webapp/studentgrowth-webapp.iml" />
+    </modules>
+  </component>
+</project>
+
