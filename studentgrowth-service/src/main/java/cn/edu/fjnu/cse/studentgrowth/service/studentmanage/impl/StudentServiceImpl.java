@@ -1,6 +1,7 @@
 package cn.edu.fjnu.cse.studentgrowth.service.studentmanage.impl;
 
 import cn.edu.fjnu.cse.studentgrowth.dao.studentmanage.IStudentDao;
+import cn.edu.fjnu.cse.studentgrowth.model.studentmanage.TStudent;
 import cn.edu.fjnu.cse.studentgrowth.service.studentmanage.IStudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -25,8 +26,8 @@ public class StudentServiceImpl implements IStudentService {
      * @function 登录验证（学生）
      */
     @Override
-    public void findStudent(String mAccount, String mPassword) {
+    public TStudent findStudent(String mAccount, String mPassword) {
         System.out.println("==============业务逻辑层被调用=============");
-        studentDao.findStudent(mAccount, mPassword);
+        return studentDao.findStudent(mAccount, mPassword);
     }
 }

@@ -1,5 +1,7 @@
 package cn.edu.fjnu.cse.studentgrowth.service.studentmanage;
 
+import cn.edu.fjnu.cse.studentgrowth.model.studentmanage.TStudent;
+
 /**
  * @Author: chan
  * @DATE: 5/24/14
@@ -12,5 +14,5 @@ public interface IStudentService {
      * @param mPassword 密码
      * @function 登录验证（学生）
      */
-    public void findStudent(String mAccount, String mPassword);
+    public TStudent findStudent(String mAccount, String mPassword);
 }

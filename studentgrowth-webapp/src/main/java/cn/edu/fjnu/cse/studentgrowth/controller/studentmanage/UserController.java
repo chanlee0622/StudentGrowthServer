@@ -9,6 +9,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 /**
  * @Author: chan
  * @DATE: 5/24/14
@@ -33,4 +36,15 @@ public class UserController extends BaseControler {
         modelAndView.setViewName("user/login");
         return modelAndView;
     }
+
+    @RequestMapping(value = "/studentLogin")
+    public ModelAndView login(HttpServletRequest request, HttpServletResponse response) {
+        String mAccount = request.getParameter("mAccount");
+        String mPassword = request.getParameter("mPassword");
+        System.out.println("==============帐号：" + mAccount + ",密码：" + mPassword);
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("user/success");
+        return modelAndView;
+    }
+
 }

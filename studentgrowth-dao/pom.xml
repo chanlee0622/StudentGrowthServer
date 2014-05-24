@@ -17,6 +17,11 @@
             <artifactId>studentgrowth-common</artifactId>
             <version>1.0-FjnuCse</version>
         </dependency>
+        <dependency>
+            <groupId>cn.edu.fjnu.cse</groupId>
+            <artifactId>studentgrowth-model</artifactId>
+            <version>1.0-FjnuCse</version>
+        </dependency>
     </dependencies>
 
 </project>
