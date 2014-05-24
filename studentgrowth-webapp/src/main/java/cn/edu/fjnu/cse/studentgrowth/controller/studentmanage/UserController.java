@@ -29,9 +29,6 @@ public class UserController extends BaseControler {
     @RequestMapping(value = "/toLogin")
     public ModelAndView toLogin() {
         System.out.println("==============控制层被调用============");
-        studentService.findStudent("", "");
-        TStudent tStudent = new TStudent();
-        tStudent.testStuent();
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("user/login");
         return modelAndView;
@@ -42,7 +39,10 @@ public class UserController extends BaseControler {
         String mAccount = request.getParameter("mAccount");
         String mPassword = request.getParameter("mPassword");
         System.out.println("==============帐号：" + mAccount + ",密码：" + mPassword);
+        TStudent tStudent = studentService.findStudent(mAccount, mPassword);
+        System.out.println(tStudent);
         ModelAndView modelAndView = new ModelAndView();
+        modelAndView.addObject("tStudent", tStudent);
         modelAndView.setViewName("user/success");
         return modelAndView;
     }
