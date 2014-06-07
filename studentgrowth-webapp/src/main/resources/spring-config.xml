@@ -49,4 +49,11 @@
         <!-- 引用事务增强 -->
         <aop:advisor pointcut-ref="serviceMethod" advice-ref="txAdvice"/>
     </aop:config>
+    
+    <!--<mvc:resources mapping="/image/**" location="/WEB-INF/image/" />
+    <mvc:resources mapping="/css/**" location="/WEB-INF/css/" />
+    <mvc:resources mapping="/js/**" location="/WEB-INF/js/" />-->
+    <mvc:resources location="/css/" mapping="/css/**" />
+    <mvc:resources location="/img/" mapping="/img/**" />
+    <mvc:resources location="/js/" mapping="/js/**" />
 </beans>

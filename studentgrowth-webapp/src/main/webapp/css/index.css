@@ -1,0 +1,13 @@
+.m_header {
+    height:50px;
+    width:100%;
+    position: fixed;
+    left:0;
+    z-index: 5001;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .15);
+    -ms-box-shadow: 0 2px 2px rgba(0, 0, 0, .15);
+    background: #fff;
+    _position: absolute;
+    top:0px;
+    border: 2px;
+}
